@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opcao">
+        <item>Opção 1</item>
+        <item>Opção 2</item>
+        <item>Opção 3</item>
+    </string-array>
+
+    <string-array name="tamanho">
+        <item>Médio</item>
+        <item>Grande</item>
+        <item>Único</item>
+    </string-array>
+
+    <string-array name="formaPgto">
+        <item>Cartão - Crédito</item>
+        <item>Cartão - Debito</item>
+        <item>Dinheiro</item>
+    </string-array>
+</resources>

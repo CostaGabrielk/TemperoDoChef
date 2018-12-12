@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "808858597482",
+    "firebase_url": "https://myfooddeliveryapp-28b74.firebaseio.com",
+    "project_id": "myfooddeliveryapp-28b74",
+    "storage_bucket": "myfooddeliveryapp-28b74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808858597482:android:037bc83e5e335532",
+        "android_client_info": {
+          "package_name": "com.example.gabri.temperodochef"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808858597482-744rukgrrfid363jtgrr4cn8fhkel0hv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALi6WEQfhJGN3jsNRylV1rm14upUBhIq8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
