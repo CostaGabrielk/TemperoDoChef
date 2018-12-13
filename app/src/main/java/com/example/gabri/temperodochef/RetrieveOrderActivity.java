@@ -31,7 +31,7 @@ public class RetrieveOrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrieve_order);
 
-        databaseOrders = FirebaseDatabase.getInstance().getReference("pedidos").child("OrderID");
+        databaseOrders = FirebaseDatabase.getInstance().getReference("Pedido");
 
         listViewOrders = (ListView) findViewById(R.id.lstViewOrders);
 

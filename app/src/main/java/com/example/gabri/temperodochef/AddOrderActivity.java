@@ -60,7 +60,7 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
         String nameClient = intent.getStringExtra(ClientActivity.NOME_CLIENTE);
 
         textViewNomeCliente.setText("Novo pedido do cliente: "+ nameClient);
-        databaseOrders = FirebaseDatabase.getInstance().getReference("pedidos").child(idClient);
+        databaseOrders = FirebaseDatabase.getInstance().getReference("Pedido").child(idClient);
 
 
         spinnerPagto.setOnItemSelectedListener(new Spinner.OnItemSelectedListener()

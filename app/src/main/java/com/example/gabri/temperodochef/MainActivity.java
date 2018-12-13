@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if( v == buttonConsultarPedidos){
             finish();
-            startActivity(new Intent(this, RetrieveOrderActivity.class));
+            startActivity(new Intent(this, OrderQueryActivity.class));
 
         }
 
