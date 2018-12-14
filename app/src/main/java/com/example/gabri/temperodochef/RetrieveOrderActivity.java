@@ -31,15 +31,13 @@ public class RetrieveOrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrieve_order);
 
-        databaseOrders = FirebaseDatabase.getInstance().getReference("Pedido");
-
+        databaseOrders = FirebaseDatabase.getInstance().getReference("pedidos").child("-LTdQ9BD2SxfUKFbuybB");
+        //Query query = FirebaseDatabase.getInstance().getReference("Pedido").orderByChild("orderId").equalTo("-LTN0DDxzP37e91_UHka");
         listViewOrders = (ListView) findViewById(R.id.lstViewOrders);
 
         orderList = new ArrayList<>();
 
-       /* Query query = FirebaseDatabase.getInstance().getReference("pedidos")
-                .orderByChild("OrderId");
-        query.addValueEventListener(ValueEventListener);*/
+
     }
 
     @Override

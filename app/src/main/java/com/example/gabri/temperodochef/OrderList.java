@@ -21,7 +21,7 @@ public class OrderList extends ArrayAdapter<Order> {
     private Activity context;
     private List<Order> orderList;
 
-    public OrderList (Activity context, List<Order> orderList){
+    public OrderList(Activity context, List<Order> orderList) {
 
         super(context, R.layout.order_list_layout, orderList);
         this.context = context;
@@ -45,13 +45,11 @@ public class OrderList extends ArrayAdapter<Order> {
         Order order = orderList.get(position);
 
 
-
-
-        textViewData.setText("Data da compra: " );
+        textViewData.setText("Data da compra: ");
         textViewOpcao.setText(order.getOpcao());
         textViewTamanho.setText((order.getTamanho()));
         textViewPgto.setText(order.getFormaPgto());
-        textViewTroco.setText(order.getTroco());
+        textViewTroco.setText( order.getTroco());
 
 
         return listViewItem;

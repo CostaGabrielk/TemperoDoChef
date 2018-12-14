@@ -25,7 +25,7 @@
         <activity android:name=".RetrieveOrderActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".CardapioActivity" />
-        <activity android:name=".OrderQueryActivity"></activity>
+        <activity android:name=".RetrieveActivity" />
     </application>
 
 </manifest>

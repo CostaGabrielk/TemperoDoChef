@@ -14,6 +14,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.gabri.temperodochef.model.Client;
 import com.example.gabri.temperodochef.model.Order;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -34,6 +35,7 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
     private Button buttonAdicionarPedido;
 
     private DatabaseReference databaseOrders;
+
 
     ListView listViewOrders;
 
@@ -60,7 +62,8 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
         String nameClient = intent.getStringExtra(ClientActivity.NOME_CLIENTE);
 
         textViewNomeCliente.setText("Novo pedido do cliente: "+ nameClient);
-        databaseOrders = FirebaseDatabase.getInstance().getReference("Pedido").child(idClient);
+        databaseOrders = FirebaseDatabase.getInstance().getReference("pedidos").child(idClient);
+
 
 
         spinnerPagto.setOnItemSelectedListener(new Spinner.OnItemSelectedListener()
@@ -113,10 +116,12 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
 
     private void addOrder() {
 
+
         String opcao = spinnerOpcao.getSelectedItem().toString();
         String tamanho = spinnerTamanho.getSelectedItem().toString();
         String pgto = spinnerPagto.getSelectedItem().toString();
         String troco = editTextTroco.getText().toString().trim();
+
 
 
         if ((!TextUtils.isEmpty(opcao)) && (!TextUtils.isEmpty(tamanho)) && (!TextUtils.isEmpty(pgto))) {
@@ -124,10 +129,11 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
             //take the id of the client and insert this order on client register
             String id = databaseOrders.push().getKey();
 
-            Order order = new Order(id, opcao, tamanho, pgto, troco);
+            Order order = new Order(id,opcao, tamanho, pgto, troco);
             databaseOrders.child(id).setValue(order);
 
-            Toast.makeText(this, "Pedido efetuado com sucesso. Entraremos em contato para confirmar seu pedido", Toast.LENGTH_SHORT).show();
+
+            Toast.makeText(this, "Pedido efetuado com sucesso!", Toast.LENGTH_SHORT).show();
             editTextTroco.setVisibility(View.GONE);
 
         } else {
