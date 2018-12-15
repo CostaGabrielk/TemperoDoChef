@@ -33,11 +33,12 @@
             android:layout_margin="10dp" />
 
         <Button
-            android:background="@drawable/consutarpedidos"
             android:id="@+id/btnConsultarPedidos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:background="@drawable/consutarpedidos"
+            tools:visibility="gone" />
 
         <Button
             android:background="@drawable/cardapio"

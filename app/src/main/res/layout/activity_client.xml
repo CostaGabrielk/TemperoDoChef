@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:hint="Digite seu nome e sobrenome"
+            android:hint="Digite o nome do cliente"
             android:textColorHint="@color/colorAccent" />
 
         <EditText
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:hint="Digite um telefone valido"
+            android:hint="Digite o telefone do cliente"
             android:inputType="phone"
             android:textColorHint="@color/colorAccent" />
 
