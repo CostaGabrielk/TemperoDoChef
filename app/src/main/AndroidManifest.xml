@@ -22,10 +22,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ClientActivity" />
         <activity android:name=".AddOrderActivity" />
-        <activity android:name=".RetrieveOrderActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".CardapioActivity" />
-        <activity android:name=".RetrieveActivity" />
     </application>
 
 </manifest>

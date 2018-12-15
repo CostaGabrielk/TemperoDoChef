@@ -12,7 +12,7 @@ public class Order {
 
     }
 
-    public Order(String orderId, String opcao, String tamanho, String formaPgto, String troco) {
+    public Order( String orderId, String opcao, String tamanho, String formaPgto, String troco) {
         this.orderId = orderId;
         this.opcao = opcao;
         this.tamanho = tamanho;
@@ -27,6 +27,7 @@ public class Order {
     public String getOrderId() {
         return orderId;
     }
+
 
     public void setOpcao(String opcao) {
         this.opcao = opcao;

@@ -2,9 +2,11 @@ package com.example.gabri.temperodochef;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -65,7 +67,6 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
         databaseOrders = FirebaseDatabase.getInstance().getReference("pedidos").child(idClient);
 
 
-
         spinnerPagto.setOnItemSelectedListener(new Spinner.OnItemSelectedListener()
         {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
@@ -86,7 +87,10 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
                 editTextTroco.setText(texto);
             }
         });
+
     }
+
+
 
     @Override
     protected void onStart() {
@@ -113,6 +117,7 @@ public class AddOrderActivity extends AppCompatActivity implements View.OnClickL
             }
         });
     }
+
 
     private void addOrder() {
 

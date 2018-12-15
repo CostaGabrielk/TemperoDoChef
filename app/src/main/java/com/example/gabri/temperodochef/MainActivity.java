@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button buttonCadastrarClientes;
     private  Button buttonConsulta;
-    private  Button buttonConsultarPedidos;
     private Button buttonCardapio;
     private  Button buttonSair;
     private FirebaseAuth firebaseAuth;
@@ -24,7 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonCadastrarClientes = (Button) findViewById(R.id.btnCadastrarCliente);
         buttonConsulta = (Button) findViewById(R.id.btnConsultarClientes);
-        buttonConsultarPedidos = (Button) findViewById(R.id.btnConsultarPedidos);
         buttonCardapio = (Button) findViewById(R.id.btnCardapio);
         buttonSair = (Button) findViewById(R.id.btnSair);
 
@@ -32,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonCadastrarClientes.setOnClickListener(this);
         buttonConsulta.setOnClickListener(this);
-        buttonConsultarPedidos.setOnClickListener(this);
         buttonCardapio.setOnClickListener(this);
         buttonSair.setOnClickListener(this);
 
@@ -60,12 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v == buttonCardapio){
             finish();
             startActivity(new Intent(this, CardapioActivity.class));
-        }
-
-        if( v == buttonConsultarPedidos){
-            finish();
-            startActivity(new Intent(this, RetrieveActivity.class));
-
         }
 
         if(v == buttonSair){
